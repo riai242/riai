@@ -1,0 +1,8 @@
+<!-- android/app/src/main/res/values/strings.xml -->
+<resources>
+    <string name="app_name">shukkinbo</string>
+
+    <!-- FIXME: 本番は自分の AdMob App ID に置き換える -->
+    <!-- 例: ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+</resources>
