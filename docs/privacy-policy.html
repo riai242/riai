@@ -1,82 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>プライバシーポリシー｜簡単入力！勤務表作成アプリ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー | 簡単入力！勤務表作成アプリ</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP",sans-serif;line-height:1.8;margin:0;padding:0;background:#fafafa;color:#222}
-    header{background:#2f4ad0;color:#fff;padding:28px 16px}
-    main{max-width:900px;margin:0 auto;padding:24px 16px;background:#fff}
-    h1{margin:0 0 4px}
-    h2{margin-top:32px;border-left:4px solid #2f4ad0;padding-left:10px}
-    a{color:#2f4ad0}
-    .meta{opacity:.9}
-    ul{margin:8px 0 16px}
-    code{background:#f3f3f3;padding:2px 6px;border-radius:4px}
-    footer{max-width:900px;margin:0 auto;padding:24px 16px 48px;color:#666}
+    body {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      font-weight: 600;
+      border-left: 4px solid #4a6cf7;
+      padding-left: .5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: .9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>プライバシーポリシー</h1>
-    <div class="meta">簡単入力！勤務表作成アプリ（パッケージ名：com.riai.shukkinbo）</div>
-  </header>
 
-  <main>
-    <p>本ポリシーは、アプリ「簡単入力！勤務表作成アプリ」（以下「本アプリ」）におけるユーザー情報の取扱いについて定めるものです。</p>
+  <h1>プライバシーポリシー<br>（簡単入力！勤務表作成アプリ）</h1>
 
-    <h2>1. 収集する情報</h2>
-    <p>本アプリはアカウント登録やサーバー連携を行わず、以下の情報を<strong>端末内</strong>に保存します。</p>
-    <ul>
-      <li>勤務記録（出勤・退勤・休憩・残業・手当・メモ・休日フラグ）</li>
-      <li>手当プリセット（名称・単価・時間単価設定）</li>
-      <li>アプリ設定（固定時刻/休憩、残業自動計算、締め日、PDF氏名 等）</li>
-    </ul>
-    <p>保存先は Android の <code>SharedPreferences</code> であり、開発者が外部から閲覧・収集することはありません。</p>
+  <p>
+    本アプリ「簡単入力！勤務表作成アプリ」（以下「本アプリ」）は、
+    利用者の勤務記録・休憩時間・残業時間・メモ等をかんたんに入力・集計し、
+    PDF や CSV として書き出せるようにすることを目的としたツールです。
+  </p>
 
-    <h2>2. 第三者提供・外部サービス</h2>
-    <p>広告配信のため、Google の <strong>Google Mobile Ads（AdMob）</strong> を利用します。広告配信事業者は、端末情報や広告ID等を用いてパーソナライズ/非パーソナライズ広告を表示する場合があります。詳細は以下をご参照ください。</p>
-    <ul>
-      <li><a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
-      <li><a href="https://business.safety.google/adsservices/" target="_blank" rel="noopener">Google の広告に関するポリシーとユーザー情報の取扱い</a></li>
-    </ul>
-    <p>本アプリは Google 以外の外部サーバーへユーザー情報を送信しません。</p>
+  <p>
+    開発者は、以下の方針に基づき、個人情報および端末内データの取り扱いを行います。
+  </p>
 
-    <h2>3. 共有機能（CSV / PDF）</h2>
-    <p>本アプリには、勤務データを CSV 共有・PDF 印刷する機能があります。共有先の選択は OS の標準共有ダイアログに委ねられ、開発者が内容を収集することはありません。共有先のサービスにおける取扱いは各サービスのポリシーに従います。</p>
+  <h2>1. 端末内に保存されるデータ</h2>
+  <p>
+    本アプリでは、以下の情報をユーザーの端末内（ローカルストレージ）に保存します。
+  </p>
+  <ul>
+    <li>勤務日・出勤時刻・退勤時刻・休憩時間</li>
+    <li>残業時間（自動計算または手動入力）</li>
+    <li>手当情報（名称・金額など）</li>
+    <li>メモ（任意で入力したメモ）</li>
+    <li>氏名（PDF出力欄に表示するためのテキスト）</li>
+    <li>締め日や勤務時間の初期値など、アプリの各種設定値</li>
+  </ul>
 
-    <h2>4. 端末の権限</h2>
-    <ul>
-      <li><strong>インターネット通信</strong>：広告表示や共有機能で使用</li>
-      <li><strong>ネットワーク状態</strong>：広告SDKの動作のために使用</li>
-    </ul>
-    <p>位置情報・連絡先・写真ライブラリ等の機密権限は使用しません。</p>
+  <p>
+    これらの情報は <strong>ユーザーの端末内にのみ保存され、開発者や第三者のサーバーには自動送信されません。</strong>
+  </p>
 
-    <h2>5. データの保存期間と削除</h2>
-    <ul>
-      <li>勤務データ・設定は端末内に保存され、ユーザーが削除するまで保持されます。</li>
-      <li>削除方法：アプリ内で個別に削除、または OS の「アプリ情報」から「ストレージとキャッシュ」→「ストレージを消去」、もしくはアプリのアンインストール。</li>
-    </ul>
+  <h2>2. データの外部送信について</h2>
+  <p>
+    本アプリは、ユーザーが手動で PDF や CSV を作成・共有する機能を提供します。<br>
+    これはユーザー自身の操作によるエクスポートであり、
+    開発者サーバーや不特定の第三者サーバーへ自動送信されることはありません。
+  </p>
 
-    <h2>6. 児童向けポリシー</h2>
-    <p>本アプリは一般向けです。13歳未満の子どもを主な対象としていません。</p>
+  <h2>3. 広告（AdMob / Google Mobile Ads）について</h2>
+  <p>
+    本アプリは広告を表示するために、Google LLC が提供する
+    「Google Mobile Ads SDK（AdMob）」を使用する場合があります。
+  </p>
+  <p>
+    広告SDKは、広告の配信や不正防止のために、端末情報（例：広告ID等）を収集することがあります。<br>
+    これらは Google のプライバシーポリシーに基づいて取り扱われます。
+  </p>
+  <p>
+    Googleプライバシーポリシー：<br>
+    https://policies.google.com/privacy
+  </p>
+  <p>
+    ※本アプリ自体は、ユーザーが入力した勤務内容・氏名などの業務データを
+    広告ネットワークに送信しません。
+  </p>
 
-    <h2>7. セキュリティ</h2>
-    <p>端末内データはOSの仕組みによりアプリ専用領域に保存されます。端末の紛失・故障・初期化等によりデータが失われる可能性があるため、必要に応じて CSV/PDF の出力やバックアップをご検討ください。</p>
+  <h2>4. 外部分析サービスについて</h2>
+  <p>
+    （2025年10月時点）本アプリは Google Analytics などの解析サービスを導入していません。<br>
+    今後、品質向上や不具合調査のために解析サービスを導入する場合は、
+    このプライバシーポリシーを更新し、収集する情報の種類と目的を明記します。
+  </p>
 
-    <h2>8. 本ポリシーの変更</h2>
-    <p>機能追加や法令改正に応じて、予告なく本ポリシーを更新する場合があります。更新後は本ページで告知します。</p>
+  <h2>5. 個人情報の第三者提供</h2>
+  <p>
+    開発者が、ユーザーの勤務データや氏名などの個人情報を
+    第三者に販売・共有することはありません。
+  </p>
 
-    <h2>9. お問い合わせ</h2>
-    <p>本ポリシーに関するお問い合わせは、以下にご連絡ください。</p>
-    <p>メール：<a href="mailto:you@example.com">you@example.com</a></p>
+  <h2>6. ユーザーによるデータ管理</h2>
+  <p>
+    本アプリに保存されたデータは、ユーザー自身で編集・削除できます。<br>
+    アプリをアンインストールすると、端末に保存されていたデータも基本的に削除されます。<br>
+    （ただし、ユーザーが自分でエクスポートしたPDFやCSVは端末内やクラウド等に残ります）
+  </p>
 
-    <p class="meta">最終更新日：2025-10-11</p>
-  </main>
+  <h2>7. 未成年の利用について</h2>
+  <p>
+    本アプリはアルバイト・パート等を含む社会人向けの勤怠記録目的で設計されていますが、
+    年齢による機能制限は行っていません。<br>
+    保護者・管理者の同意のもとでご利用ください。
+  </p>
+
+  <h2>8. プライバシーポリシーの変更</h2>
+  <p>
+    本ポリシーの内容は、法令の改正やアプリの機能追加などにより、予告なく更新される場合があります。<br>
+    重要な変更がある場合には、更新後のプライバシーポリシーを公開します。
+  </p>
+
+  <h2>9. お問い合わせ先</h2>
+  <p>
+    本アプリおよびプライバシーに関するお問い合わせは、以下メールアドレスまでご連絡ください。<br>
+    <strong>開発者: riai242</strong><br>
+    <strong>メール: riai242@yahoo.co.jp</strong>
+  </p>
 
   <footer>
-    <small>© 2025 riai242</small>
+    最終更新日: 2025年10月26日
   </footer>
+
 </body>
 </html>
